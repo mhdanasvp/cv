@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="h-content">
+          <div class="h-c-left"></div>
+          <div class="h-c-right" id="main">
+            <a class="sub active" href="index.html">Home</a>
+            <a class="sub" href="about.html">About</a>
+            <!-- <a class="sub" href="#contact">Contact</a> -->
+          </div>
+          
+            
+            <div class="h-c-nav">
+              <div class="h-c-navbutton">
+                <button onclick="menu()"><img src="images/icons8-menu-48.png" alt=""></button>
+              </div>
+              <div class="h-c-navlink" id="navv">
+                <a class="sub active" href="index.html">Home</a>
+                <a class="sub " href="about.html">About</a>
+                <!-- <a class="sub" href="#contact">Contact</a> -->
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="container1">
+      <div class="wrapper">
+        <div class="c1-content">
+          <div class="tit">
+            <h1>I'm Muhammed Anas</h1>
+            <p>web devoloper</p>
+          </div>
+          <div class="image">
+            <div class="pic">
+              <img src="images/transparent-1911160_1280.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="container2">
+      <div class="wrapper">
+        <div class="c2-content">
+          <div class="dp">
+            <img src="images/21101_muhammed_anas.jpg" alt="" />
+          </div>
+          <h3 class="hed">Hi,</h3>
+          <p>
+            I'm a web designer/developer, so I know how to create website to run
+            across devices using the latest technologies available and I would
+            like to associate with a firm where I can improve and develop my
+            skills thereby provide the same for its efficient functioning.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr
+      style="
+        margin: 0 auto;
+        width: 100px;
+        height: 0;
+        border-style: none;
+        border-top: 5px dotted #e0ebe8;
+      "
+    />
+
+    <div id="container3">
+      <div class="wrapper">
+        <div class="c3-content">
+          <h2 class="hed">What I Can Do</h2>
+          <div class="frnd">
+            <div class="f-left">
+              <img src="images/monitor-1130493_1280.png" alt="" />
+            </div>
+            <div class="f-right">
+              <h4>Front-End</h4>
+              <p>
+                I have good knowledge in HTML, CSS, JS, JQuery, Bootstrap and
+                basic knowledge in React JS
+              </p>
+            </div>
+          </div>
+
+          <div class="back">
+            <div class="b-left">
+              <h4>Back-End</h4>
+              <p>
+                I have good knowledge in Python, Django(framework of Python),
+                Postgresql 
+              </p>
+            </div>
+            <div class="b-right">
+              <img src="images/monitor-1130493_1280.png" alt="" />
+            </div>
+          </div>
+          <div class="icon">
+            <div class="i i-1"></div>
+            <div class="i i-2"></div>
+            <div class="i i-3"></div>
+            <div class="i i-4"></div>
+            <div class="i i-5"></div>
+            <!-- <div class="i i-6"></div> -->
+            <div class="i i-7"></div>
+            <!-- <div class="i i-8"></div> -->
+            <div class="i i-9"></div>
+            <!-- <div class="i i-10"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr
+      style="
+        margin: 0 auto;
+        width: 100px;
+        height: 0;
+        border-style: none;
+        border-top: 5px dotted #e0ebe8;
+      "
+    />
+    <div id="container4">
+      <div class="wrapper">
+        <div class="c4-content"></div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <a href="mailto:mhd.anas.vp@gmail.com"
+        ><img src="images/icons8-important-mail-48.png" alt="" /> Contact Me</a
+      >
+    </div>
+    <footer>
+      <div class="wrapper">
+        <div class="f-content">
+          <div class="f-top">
+            <p><img src="images/icons8-phone-32.png" alt="" /> 9562348936</p>
+            <p>
+              <img src="images/icons8-important-mail-48.png" alt="" />
+              mhd.anas.vp@gmail.com
+            </p>
+            <p>
+              <img src="images/icons8-whatsapp-48 (2).png" alt="" /> 9562348936
+            </p>
+            <p><img src="images/icons8-instagram-48.png" alt="" /> anas_zfs</p>
+          </div>
+          <div class="f-bottom">
+            <a href="mailto:mhd.anas.vp@gmail.com">hire me</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var btnContainer = document.getElementById("main");
+
+      var btns = document.getElementsByClassName("sub");
+
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+
+      
+      function menu() {
+  var x = document.getElementById("navv");
+  if (x.className === "h-c-navlink") {
+    x.className += " hide";
+  } else {
+    x.className = "h-c-navlink";
+  }
+}
+    </script>
+  </body>
+</html>
